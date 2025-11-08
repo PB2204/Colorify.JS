@@ -1,35 +1,15 @@
-export declare function hexToRgb(hex: string): {
-    r: number;
-    g: number;
-    b: number;
-    a?: number;
-};
-export declare function rgbToHex(r: number, g: number, b: number, a?: number): string;
-export declare function rgbToHsl(r: number, g: number, b: number, a?: number): {
-    h: number;
-    s: number;
-    l: number;
-    a?: number;
-};
-export declare function hslToRgb(h: number, s: number, l: number, a?: number): {
-    r: number;
-    g: number;
-    b: number;
-    a?: number;
-};
-export declare function hexToHsl(hex: string): {
-    h: number;
-    s: number;
-    l: number;
-    a?: number;
-};
-export declare function hslToHex(h: number, s: number, l: number, a?: number): string;
+export * from "./models/hex.js";
+export * from "./models/rgb.js";
+export * from "./models/hsl.js";
+export * from "./types.js";
 declare const _default: {
-    hexToRgb: typeof hexToRgb;
-    rgbToHex: typeof rgbToHex;
-    rgbToHsl: typeof rgbToHsl;
-    hslToRgb: typeof hslToRgb;
-    hexToHsl: typeof hexToHsl;
-    hslToHex: typeof hslToHex;
+    hexToRgb: (hex: string) => RGB;
+    rgbToHex: (r: number, g: number, b: number, a?: number) => string;
+    rgbToHsl: (r: number, g: number, b: number, a?: number) => HSL;
+    hslToRgb: (h: number, s: number, l: number, a?: number) => RGB;
+    hexToHsl: (hex: string) => HSL;
+    hslToHex: (h: number, s: number, l: number, a?: number) => string;
 };
 export default _default;
+import { RGB, HSL } from "./types.js";
+export { RGB, HSL };

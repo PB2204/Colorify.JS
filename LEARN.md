@@ -1,7 +1,8 @@
 # 📘 Learn: Understanding How Colorify.js Works
 
-Welcome to the **learning guide** for **@rockstarpabitra/colorify** 🎨  
+Welcome to the learning guide for @rockstarpabitra/colorify v2.0.0 🎨
 This document is designed to help you (and contributors) understand the **science, logic, and code architecture** behind the library — step-by-step.
+> 🆕 Version 2.0.0 introduces a fully modular codebase — each color model (HEX, RGB, HSL) now lives in its own file for better scalability and learning clarity.
 
 ---
 

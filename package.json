@@ -1,6 +1,6 @@
 {
   "name": "@rockstarpabitra/colorify",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tiny color converter: hex ↔ rgb ↔ hsl (with alpha), zero deps.",
   "keywords": ["color", "hex", "rgb", "hsl", "converter", "tiny"],
   "license": "MIT",

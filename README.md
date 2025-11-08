@@ -1,8 +1,8 @@
-<h1 align="center">🎨 Colorify.js</h1>
+<h1 align="center">🎨 Colorify.js v2.0.0</h1>
 
 <p align="center">
-  <b>A tiny and dependency-free JavaScript library to convert colors between HEX, RGB, and HSL formats — with alpha support.</b><br>
-  <i>Fast • Lightweight • Accurate • Zero Dependencies</i>
+  <b>A modular, dependency-free JavaScript library to convert colors between HEX, RGB, and HSL formats — now faster, cleaner, and smarter.</b><br>
+  <i>Lightweight • Accurate • Typed • Zero Dependencies</i>
 </p>
 
 <p align="center">
@@ -17,10 +17,24 @@
 ## ✨ Features
 
 - 🔁 Convert seamlessly between **HEX ↔ RGB ↔ HSL**
-- 🌈 Supports **alpha transparency (RGBA / HSLA / HEXA)**
-- ⚡ Zero dependencies — just **one tiny file**
-- 📦 Works in **Browser, Node.js, Deno,** and modern build tools
-- 🧩 Tree-shakeable, lightweight, and type-safe (with TypeScript)
+- 🌈 Supports **alpha transparency** (`RGBA` / `HSLA` / `HEXA`)
+- ⚙️ Fully **TypeScript-based and tree-shakeable**
+- ⚡ **Zero dependencies** — small and lightning-fast
+- 🧩 Modular architecture — built for extension (CMYK, LAB, etc.)
+- 📦 Works in **Browser**, **Node.js**, **Deno**, and **modern bundlers**
+
+---
+
+## 🆕 What’s New in v2.0.0
+
+Version **2.0.0** marks a **major refactor** of the entire library for performance, scalability, and clarity.
+
+- 🚀 **Completely Modular Codebase** — split into `models/`, `utils/`, and `types/`
+- ⚙️ **Improved precision & validation** for all color conversions
+- 🧱 **Better TypeScript exports** and tree-shakable structure
+- 🧪 **Refined unit tests** with consistent precision rounding
+- 💡 **Future-ready architecture** for new color models (CMYK, LAB, HSV)
+- 🧠 Code rewritten for **clarity, safety, and learning**
 
 ---
 
@@ -32,17 +46,23 @@ Using **npm**:
 npm install @rockstarpabitra/colorify
 ````
 
-or using **yarn**:
+Using **yarn**:
 
 ```bash
 yarn add @rockstarpabitra/colorify
+```
+
+Using **pnpm**:
+
+```bash
+pnpm add @rockstarpabitra/colorify
 ```
 
 ---
 
 ## 🚀 Quick Start
 
-### ✅ Import (ESM)
+### ✅ ESM Import
 
 ```js
 import { hexToRgb, rgbToHex, rgbToHsl, hslToRgb } from "@rockstarpabitra/colorify";
@@ -60,7 +80,7 @@ console.log(hslToRgb(120, 100, 50));
 // → { r: 0, g: 255, b: 0 }
 ```
 
-### ✅ Require (CommonJS)
+### ✅ CommonJS Require
 
 ```js
 const { hexToRgb, rgbToHex } = require("@rockstarpabitra/colorify");
@@ -75,7 +95,7 @@ console.log(hexToRgb("#00ff00"));
 
 ### 🎨 `hexToRgb(hex: string)`
 
-Converts a HEX color string to RGB object.
+Converts a HEX color string to an RGB object.
 
 | Input       | Output Example                     |
 | ----------- | ---------------------------------- |
@@ -86,8 +106,7 @@ Converts a HEX color string to RGB object.
 
 ### 🌈 `rgbToHex(r: number, g: number, b: number, a?: number)`
 
-Converts RGB values to HEX string.
-Supports optional alpha channel (`0 → 1`).
+Converts RGB values to a HEX color string. Supports optional alpha (`0 → 1`).
 
 | Input              | Output        |
 | ------------------ | ------------- |
@@ -98,7 +117,7 @@ Supports optional alpha channel (`0 → 1`).
 
 ### 🔵 `rgbToHsl(r: number, g: number, b: number, a?: number)`
 
-Converts RGB to HSL.
+Converts RGB to HSL format.
 
 | Input         | Output                      |
 | ------------- | --------------------------- |
@@ -120,7 +139,7 @@ Converts HSL values to RGB.
 
 ### 🟣 `hexToHsl(hex: string)`
 
-Converts HEX color to HSL directly.
+Converts HEX directly to HSL.
 
 | Input     | Output                    |
 | --------- | ------------------------- |
@@ -141,10 +160,10 @@ Converts HSL directly to HEX.
 
 ## ⚙️ Notes
 
-* Accepts both **short** (`#abc`, `#abcd`) and **long** (`#aabbcc`, `#aabbccdd`) HEX formats.
-* **Alpha** values are normalized to range `0–1`.
-* RGB uses 0–255, HSL uses 0–360° hue and 0–100% saturation/lightness.
-* All values are automatically **clamped and rounded**.
+* ✅ Supports **short** (`#abc`, `#abcd`) and **long** (`#aabbcc`, `#aabbccdd`) HEX formats
+* 🔢 Alpha values normalized between `0–1`
+* 🎚 RGB uses 0–255, HSL uses 0–360° hue and 0–100% saturation/lightness
+* 🧮 All values automatically **clamped and rounded**
 
 ---
 
@@ -170,7 +189,7 @@ console.log(lighten("#e74c3c", 15));
 
 All functions are unit-tested using **Vitest**.
 
-To run tests locally:
+Run tests locally:
 
 ```bash
 npm test
@@ -186,7 +205,7 @@ To build from source:
 npm run build
 ```
 
-This generates the compiled files in the `dist/` directory:
+Generated output:
 
 ```
 dist/
@@ -197,16 +216,44 @@ dist/
 
 ---
 
-## 🌍 Browser Usage (CDN)
+## ✅ Summary Checklist — v2.0.0
 
-You can use **Colorify.js** directly in the browser via [jsDelivr](https://www.jsdelivr.com/):
+| Status | Category | Description |
+|:------:|:----------|:-------------|
+| 🟢 | **Version** | Latest stable release — `v2.0.0` |
+| 🟢 | **Language** | Written in **TypeScript** with full type definitions |
+| 🟢 | **Architecture** | Modular structure (`models/`, `utils/`, `types/`) |
+| 🟢 | **Compatibility** | Works with **Browser**, **Node.js**, and **Deno** |
+| 🟢 | **Dependencies** | **Zero** — 100% pure JavaScript |
+| 🟢 | **Testing** | Covered with **Vitest** unit tests |
+| 🟢 | **Build System** | Compiles via `tsc` and ships ESM + CJS builds |
+| 🟢 | **Documentation** | Complete `README`, `LEARN.md`, and `DEVELOPERS_GUIDE.md` |
+| 🟢 | **License** | Open Source under **MIT License** |
+| 🟢 | **Performance** | Optimized conversion logic & precision math |
+| 🟢 | **Future-Ready** | Designed for expansion — CMYK, LAB, HSV coming soon |
+
+> 💡 *Colorify.js v2.0.0 is clean, modular, and built for both developers and learners — blending math, code, and color in one elegant package.*
+
+---
+
+## 🌍 Browser (CDN)
+
+Use **Colorify.js** directly in the browser via [jsDelivr](https://www.jsdelivr.com/):
 
 ```html
 <script type="module">
-  import { hexToRgb } from "https://cdn.jsdelivr.net/npm/@rockstarpabitra/colorify/dist/index.js";
+  import { hexToRgb } from "https://cdn.jsdelivr.net/npm/@rockstarpabitra/colorify@2.0.0/dist/index.js";
   console.log(hexToRgb("#ff00ff"));
 </script>
 ```
+
+---
+
+## 🧩 Developer Resources
+
+📘 [Learn Colorify.js](./LEARN.md)
+💡 [Developer’s Guide](./DEVELOPERS_GUIDE.md)
+🧾 [Changelog](./CHANGELOG.md)
 
 ---
 
