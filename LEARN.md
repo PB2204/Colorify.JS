@@ -1,4 +1,3 @@
-````md
 # 📘 Learn: Understanding How Colorify.js Works
 
 Welcome to the **learning guide** for **@rockstarpabitra/colorify** 🎨  
@@ -257,4 +256,3 @@ Want to go deeper?
   Made with ❤️ by <a href="https://sdepabitra.me">Pabitra Banerjee</a><br>
   <sub>Part of the <a href="https://mbwebbers.dev">MB WEBBER’S</a> Open Source Ecosystem</sub>
 </p>
-```

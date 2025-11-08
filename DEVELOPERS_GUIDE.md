@@ -1,4 +1,3 @@
-````md
 # 🧑‍💻 Developer’s Guide – Extending Colorify.js
 
 Welcome, Developer 👋  
@@ -253,4 +252,3 @@ That’s the spirit of **Colorify.js** — making color math accessible to every
   Made with ❤️ by <a href="https://sdepabitra.me">Pabitra Banerjee</a><br>
   <sub>Part of the <a href="https://mbwebbers.dev">MB WEBBER’S</a> Open Source Ecosystem</sub>
 </p>
-```

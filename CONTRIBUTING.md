@@ -1,4 +1,3 @@
-````md
 # 🧩 Contributing to Colorify.js
 
 First off — **thank you for taking the time to contribute! 💖**  
@@ -206,4 +205,3 @@ By contributing, you agree that your contributions will be licensed under the sa
     <img src="https://img.shields.io/static/v1?label=MB%20WEBBER'S&message=Open%20Source%20Initiative&color=00C896&labelColor=black&style=for-the-badge" alt="MB WEBBER'S Open Source Initiative">
   </a>
 </p>
-```

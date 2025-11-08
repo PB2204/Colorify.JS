@@ -1,4 +1,3 @@
-````md
 <h1 align="center">🎨 Colorify.js</h1>
 
 <p align="center">
@@ -236,4 +235,3 @@ See the [LICENSE](./LICENSE) file for details.
     <img src="https://img.shields.io/static/v1?label=MB%20WEBBER'S&message=Open%20Source%20Initiative&color=00C896&labelColor=black&style=for-the-badge" alt="MB WEBBER'S Open Source Initiative">
   </a>
 </p>
-```
